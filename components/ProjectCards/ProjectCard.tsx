@@ -5,7 +5,6 @@ import Link from "next/link";
 // Imports de icons
 import {
   BsGithub,
-  BsEye,
   BsFillInfoCircleFill,
   BsCalendar2Date,
 } from "react-icons/bs";
@@ -18,6 +17,7 @@ import {
 import { SiTailwindcss, SiTypescript } from "react-icons/si";
 import { MdReadMore } from "react-icons/md";
 import { TbBrandNextjs } from "react-icons/tb";
+import { GoProjectSymlink } from "react-icons/go";
 
 interface Project {
   date: string;
@@ -74,7 +74,7 @@ function ProjectList() {
             )}
           </div>
           <p>{project.desc}</p>
-          <div className="bg-primary p-3 flex items-center justify-between gap-1 rounded">
+          <div className="bg-primary p-3 flex items-center justify-around rounded">
             <a
               className={"font-semibold text-center text-text"}
               href={project.github}
@@ -87,14 +87,8 @@ function ProjectList() {
               href={project.deploy}
               target="_blank"
             >
-              <BsEye className="relative top-0.5" /> Deploy
+              <GoProjectSymlink className="relative top-0.5" /> Deploy
             </a>
-            <Link
-              className={"font-semibold text-text text-center"}
-              href={project.link}
-            >
-              <MdReadMore className="relative top-0.5" /> Mais
-            </Link>
           </div>
         </li>
       ))}
