@@ -1,0 +1,89 @@
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Normal Colors */
+  --body: rgb(226,232,240);
+
+  --primary: hsl(27, 96%, 61%);
+
+  --secondary: #ffffff;
+
+  --text: hsl(240, 5.9%, 10%);
+
+  --border: rgba(226,232,240,.5);
+  /* Links */
+  --link: var(--text);
+  --fontweight: 600;
+  /* Sizes */
+  --maxwidth: 1266px;
+  /* Fontes */
+  --fontprimary: "Roboto", sans-serif;
+  --fontsecondary: "Ubuntu", sans-serif;
+}
+
+:root.dark {
+  /* Dark Mode */
+  --body: #1f1f1f;
+
+  --primary: #262d35;
+
+  --secondary: #303942;
+
+  --text: #e3e0e0;
+
+  --border: rgba(38, 45, 53, 0.5);
+  /* Links */
+  --link: #00abf0;
+
+  --fontweight: 400;
+}
+
+* {
+  color: var(--text);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  background: var(--body);
+}
+
+main {
+  padding: 1rem 0.8rem 3rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link);
+  font-weight: var(--fontweight);
+}
+
+input {
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
+.active {
+  background: rgba(0, 0, 0, 0.035);
+  border-radius: 4px;
+}
+
+#tec-icons {
+  position: relative;
+  top: 2px;
+}
