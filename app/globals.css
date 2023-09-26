@@ -4,7 +4,7 @@
 
 :root {
   /* Normal Colors */
-  --body: rgb(226,232,240);
+  --body: rgb(226, 232, 240);
 
   --primary: hsl(27, 96%, 61%);
 
@@ -12,15 +12,15 @@
 
   --text: hsl(240, 5.9%, 10%);
 
-  --border: rgba(226,232,240,.5);
+  --border: rgba(226, 232, 240, 0.5);
   /* Links */
   --link: var(--text);
   --fontweight: 600;
   /* Sizes */
   --maxwidth: 1266px;
   /* Fontes */
-  --fontprimary: "Roboto", sans-serif;
-  --fontsecondary: "Ubuntu", sans-serif;
+  --fontprimary: 'Roboto', sans-serif;
+  --fontsecondary: 'Ubuntu', sans-serif;
 }
 
 :root.dark {
@@ -83,7 +83,25 @@ li {
   border-radius: 4px;
 }
 
-#tec-icons {
-  position: relative;
-  top: 2px;
+#image-project:hover::before {
+  opacity: 0;
+  height: 0;
+}
+
+#image-project::before {
+  content: 'Exemplo';
+  position: absolute;
+  background: rgb(0 0 0 / 80%);
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  color: white;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  transition: 0.3s;
 }
