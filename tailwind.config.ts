@@ -14,7 +14,9 @@ const config: Config = {
         primary: "var(--primary)",
         secondary: "var(--secondary)",
         text: "var(--text)",
+        link: "var(--link)",
         border: "var(--border)",
+        projbuttons: "var(--projbuttons)",
         fontweight: "var(--fontweight)",
       },
       maxWidth: {

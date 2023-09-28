@@ -4,39 +4,53 @@
 
 :root {
   /* Normal Colors */
-  --body: rgb(226, 232, 240);
-
+  --body: hsl(210, 40%, 96.1%);
   --primary: hsl(27, 96%, 61%);
-
   --secondary: #ffffff;
+  --text: hsl(240, 5.9%, 20%);
+  --border: hsl(210, 40%, 96.1%);
+  --projbuttons: var(--primary);
+  --imgbefore: rgb(0 0 0 / 50%);
 
-  --text: hsl(240, 5.9%, 10%);
-
-  --border: rgba(226, 232, 240, 0.5);
   /* Links */
-  --link: var(--text);
-  --fontweight: 600;
+  --link: hsl(240, 5.9%, 10%);
+  --fontweight: 400;
+
   /* Sizes */
   --maxwidth: 1266px;
+
   /* Fontes */
-  --fontprimary: 'Roboto', sans-serif;
-  --fontsecondary: 'Ubuntu', sans-serif;
+  --fontprimary: "Roboto", sans-serif;
+  --fontsecondary: "Ubuntu", sans-serif;
 }
 
 :root.dark {
-  /* Dark Mode */
+  /* Dark Theme */
   --body: #1f1f1f;
-
   --primary: #262d35;
-
   --secondary: #303942;
-
   --text: #e3e0e0;
-
   --border: rgba(38, 45, 53, 0.5);
+  --projbuttons: red;
+  --imgbefore: rgb(0 0 0 / 85%);
+
   /* Links */
   --link: #00abf0;
+  --fontweight: 400;
+}
 
+:root.light {
+  /* Theme 1 */
+  --body: #1d24334;
+  --primary: #334756;
+  --secondary: rgb(51, 71, 86);
+  --text: #e9e9e9;
+  --border: rgb(38 45 53 / 50%);
+  --projbuttons: rgb(8, 32, 50, 0.7);
+  --imgbefore: rgb(0 0 0 / 85%);
+
+  /* Links */
+  --link: #f0a500;
   --fontweight: 400;
 }
 
@@ -79,8 +93,25 @@ li {
 }
 
 .active {
-  background: rgba(0, 0, 0, 0.035);
+  color: var(--link);
   border-radius: 4px;
+  position: relative;
+}
+
+header .active::before {
+  content: "";
+  position: absolute;
+  width: 30%;
+  left: 0;
+  height: 2px;
+  bottom: 5px;
+  background: var(--link);
+  border-radius: 1px;
+  transition: 0.2s;
+}
+
+.active:hover::before {
+  width: 100%;
 }
 
 #image-project:hover::before {
@@ -89,9 +120,9 @@ li {
 }
 
 #image-project::before {
-  content: 'Exemplo';
+  content: "Exemplo";
   position: absolute;
-  background: rgb(0 0 0 / 80%);
+  background: var(--imgbefore);
   width: 100%;
   height: 100%;
   bottom: 0;
