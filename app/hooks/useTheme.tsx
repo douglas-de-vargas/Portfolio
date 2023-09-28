@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, {
   useContext,
   createContext,
@@ -7,7 +7,7 @@ import React, {
   ReactNode,
 } from "react";
 
-// Defina um tipo para o contexto
+// Define um tipo para o contexto
 type ThemeContextType = {
   theme: string;
   setTheme: React.Dispatch<React.SetStateAction<string>>;

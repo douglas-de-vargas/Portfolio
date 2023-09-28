@@ -11,14 +11,11 @@
   --border: hsl(210, 40%, 96.1%);
   --projbuttons: var(--primary);
   --imgbefore: rgb(0 0 0 / 50%);
-
   /* Links */
   --link: hsl(240, 5.9%, 10%);
   --fontweight: 400;
-
   /* Sizes */
   --maxwidth: 1266px;
-
   /* Fontes */
   --fontprimary: "Roboto", sans-serif;
   --fontsecondary: "Ubuntu", sans-serif;
@@ -33,7 +30,6 @@
   --border: rgba(38, 45, 53, 0.5);
   --projbuttons: rgb(8, 32, 50, 0.7);
   --imgbefore: rgb(0 0 0 / 85%);
-
   /* Links */
   --link: #f0a500;
   --fontweight: 400;
