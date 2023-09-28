@@ -2,9 +2,10 @@
 import React from "react";
 import Link from "next/link";
 import { ImHome3 } from "react-icons/im";
+import { GoMoon, GoSun } from "react-icons/go";
 import { usePathname } from "next/navigation";
 
-import { useTheme } from "@/hooks/useTheme";
+ import { useTheme } from "@/app/hooks/useTheme";
 
 function Header() {
   const { theme, setTheme } = useTheme();
@@ -25,8 +26,22 @@ function Header() {
             </Link>
           </div>
 
-          <div>
-            {theme === "light" ? <div onClick={()=>setTheme('dark')}>is light</div> : <div onClick={()=>setTheme('light')}>is dark</div>}
+          <div className="flex items-stretch">
+            {theme === "light" ? (
+              <div
+                className="flex items-center"
+                onClick={() => setTheme("dark")}
+              >
+                <GoSun />
+              </div>
+            ) : (
+              <div
+                className="flex items-center"
+                onClick={() => setTheme("light")}
+              >
+                <GoMoon />
+              </div>
+            )}
           </div>
           <nav className="flex items-stretch">
             <Link

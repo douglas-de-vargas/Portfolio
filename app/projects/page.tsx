@@ -1,4 +1,4 @@
-import ProjectList from "@/components/ProjectCards/ProjectCard";
+import ProjectList from "@/app/components/ProjectCards/ProjectCard";
 
 function Projects() {
   return (

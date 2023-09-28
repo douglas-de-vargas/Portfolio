@@ -7,7 +7,13 @@ import React, {
   ReactNode,
 } from "react";
 
-const ThemeContext = createContext<any>();
+// Defina um tipo para o contexto
+type ThemeContextType = {
+  theme: string;
+  setTheme: React.Dispatch<React.SetStateAction<string>>;
+};
+
+const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export default function ThemeContextProvider({
   children,

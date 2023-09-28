@@ -1,9 +1,9 @@
 import React from "react";
 import "./globals.css";
 import type { Metadata } from "next";
-import Header from "@/components/Layout/Header";
-import Footer from "@/components/Layout/Footer";
-import ThemeContextProvider from "@/hooks/useTheme";
+import Header from "@/app/components/Layout/Header";
+import Footer from "@/app/components/Layout/Footer";
+import ThemeContextProvider from "@/app/hooks/useTheme";
 
 export const metadata: Metadata = {
   title: "Douglas Vargas",

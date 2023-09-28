@@ -26,26 +26,11 @@
 
 :root.dark {
   /* Dark Theme */
-  --body: #1f1f1f;
+  --body: rgb(29, 36, 51);
   --primary: #262d35;
   --secondary: #303942;
   --text: #e3e0e0;
   --border: rgba(38, 45, 53, 0.5);
-  --projbuttons: red;
-  --imgbefore: rgb(0 0 0 / 85%);
-
-  /* Links */
-  --link: #00abf0;
-  --fontweight: 400;
-}
-
-:root.light {
-  /* Theme 1 */
-  --body: #1d24334;
-  --primary: #334756;
-  --secondary: rgb(51, 71, 86);
-  --text: #e9e9e9;
-  --border: rgb(38 45 53 / 50%);
   --projbuttons: rgb(8, 32, 50, 0.7);
   --imgbefore: rgb(0 0 0 / 85%);
 
