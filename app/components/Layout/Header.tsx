@@ -5,7 +5,7 @@ import { ImHome3 } from "react-icons/im";
 import { GoMoon, GoSun } from "react-icons/go";
 import { usePathname } from "next/navigation";
 
- import { useTheme } from "@/app/hooks/useTheme";
+import { useTheme } from "@/app/hooks/useTheme";
 
 function Header() {
   const { theme, setTheme } = useTheme();
@@ -43,17 +43,6 @@ function Header() {
               </div>
             )}
           </div>
-          <nav className="flex items-stretch">
-            <Link
-              className={
-                pathname === "/projects/" ? `${classLinks} active` : classLinks
-              }
-              href="/projects"
-              passHref
-            >
-              Projetos
-            </Link>
-          </nav>
         </div>
       </header>
     </>

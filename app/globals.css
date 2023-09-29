@@ -117,3 +117,15 @@ header .active::before {
   font-size: 1.5rem;
   transition: 0.3s;
 }
+
+main {
+  background-image: url("/background.jpg");
+  background-size: auto 100%;
+  background-repeat: repeat;
+
+  background-color: rgba(219, 219, 219, 0.787);
+}
+#card-project {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px 0px;
+  background: rgb(255,255,255);
+}

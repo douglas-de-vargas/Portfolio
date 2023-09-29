@@ -78,7 +78,8 @@ function ProjectList() {
         const formattedDate: string = formatDate(project.date);
         return (
           <li
-            className="relative flex flex-col md:w-[358.4px] gap-1 px-2 py-2.5 bg-body shadow-lg rounded-md overflow-hidden border-1 border-solid border-border"
+            id="card-project"
+            className="relative flex flex-col md:w-[358.4px] gap-1 px-2 py-2.5 rounded-md overflow-hidden border-1 border-solid border-border"
             key={index}
           >
             <div id="image-project" className="flex justify-center relative">
