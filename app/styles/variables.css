@@ -18,7 +18,9 @@
   /* Fontes */
   --fontprimary: "Roboto", sans-serif;
   --fontsecondary: "Ubuntu", sans-serif;
-}:root.dark {
+}
+
+:root.dark {
   /* Dark Theme */
   --body: #1f1f1f;
   --primary: #262d35;

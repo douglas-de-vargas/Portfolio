@@ -1,0 +1,10 @@
+#tech-icons {
+  display: flex;
+  gap: 5px;
+  font-size: 1.3rem;
+}
+
+#tech-icons svg {
+  position: relative;
+  top: 0.4px;
+}

@@ -10,9 +10,9 @@ export default function Home() {
         na intenção de aprender sobre as tecnologias front-end e desenvolver
         minhas habilidades como desenvolvedor.
       </p>
-      <ul className="flex flex-col gap-6 mt-6 md:flex-row md:flex-wrap">
+      <section id="project-list">
         <ProjectList />
-      </ul>
+      </section>
     </>
   );
 }

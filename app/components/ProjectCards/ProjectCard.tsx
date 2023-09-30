@@ -77,27 +77,21 @@ function ProjectList() {
       {projectsData.map((project: Project, index: number) => {
         const formattedDate: string = formatDate(project.date);
         return (
-          <li
-            id="card-project"
-            className="relative flex flex-col md:w-[358.4px] gap-1 px-2 py-2.5 rounded-md overflow-hidden border-1 border-solid border-border"
-            key={index}
-          >
+          <article id="project" key={index}>
+            <h2>{project.name}</h2>
+            <span className="flex gap-1 text-[.95rem]">
+              <BsCalendar2Date className="relative top-[1px]" />
+              {formattedDate}
+            </span>
+            <p className="grow">{project.desc}</p>
             <div id="image-project" className="flex justify-center relative">
               <Link href={project.deploy} target="_blank" passHref>
-                <img
-                  className="overflow-hidden w-full h-[250px] rounded-md object-cover"
-                  src={project.src}
-                  alt={project.name}
-                />
+                <img src={project.src} alt={project.name} />
               </Link>
             </div>
-            <div className="flex items-center justify-between">
-              <span className="flex gap-1 text-[.95rem]">
-                <BsCalendar2Date className="relative top-[1px]" />
-                {formattedDate}
-              </span>
+            <div>
               {project.code && (
-                <span className="flex gap-1 text-[1.3rem]">
+                <span id="tech-icons">
                   {project.code.html5 ? <IoLogoHtml5 /> : null}
                   {project.code.css3 ? <IoLogoCss3 /> : null}
                   {project.code.tailwindcss ? <SiTailwindcss /> : null}
@@ -108,8 +102,6 @@ function ProjectList() {
                 </span>
               )}
             </div>
-            <h2>{project.name}</h2>
-            <p className="grow">{project.desc}</p>
             <div className="flex items-center justify-center gap-2 rounded">
               <Link
                 className={"py-2 grow text-center bg-projbuttons rounded"}
@@ -129,7 +121,7 @@ function ProjectList() {
                 Deploy
               </Link>
             </div>
-          </li>
+          </article>
         );
       })}
     </>

@@ -5,10 +5,11 @@
 :root {
   /* Normal Colors */
   --body: hsl(210, 40%, 96.1%);
+  --main: white;
   --primary: hsl(27, 96%, 61%);
   --secondary: #ffffff;
   --text: hsl(240, 5.9%, 20%);
-  --border: hsl(210, 40%, 96.1%);
+  --border: rgb(227, 227, 227);
   --projbuttons: var(--primary);
   --imgbefore: rgb(0 0 0 / 50%);
   /* Links */
@@ -24,6 +25,7 @@
 :root.dark {
   /* Dark Theme */
   --body: rgb(29, 36, 51);
+  --main: #30394281;
   --primary: #262d35;
   --secondary: #303942;
   --text: #e3e0e0;
@@ -52,7 +54,39 @@ body {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 0 auto;
   padding: 1rem 0.8rem 3rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px 0px;
+  width: 100%;
+  max-width: var(--maxwidth);
+  background: var(--secondary);
+}
+
+#project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+#project:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+#project {
+  border-top: 5px solid blue;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
+}
+
+#image-project img {
+  max-width: 100%;
 }
 
 button {
@@ -95,6 +129,7 @@ header .active::before {
   width: 100%;
 }
 
+/*
 #image-project:hover::before {
   opacity: 0;
   height: 0;
@@ -117,15 +152,4 @@ header .active::before {
   font-size: 1.5rem;
   transition: 0.3s;
 }
-
-main {
-  background-image: url("/background.jpg");
-  background-size: auto 100%;
-  background-repeat: repeat;
-
-  background-color: rgba(219, 219, 219, 0.787);
-}
-#card-project {
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px 0px;
-  background: rgb(255,255,255);
-}
+*/

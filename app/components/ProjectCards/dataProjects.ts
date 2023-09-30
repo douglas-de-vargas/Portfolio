@@ -3,7 +3,7 @@ const projects = [
  {
     date: "Dd/Mm/Aaaa",
     name: "",
-    src: "Imagem",
+    src: "/images/projectImagem",
     github: "Repositório",
     deploy: "Hospedagem",
     link: "Ver mais",
@@ -20,7 +20,7 @@ const projects = [
   {
     date: "01/09/2023",
     name: "Gerador de Senhas",
-    src: "/GeradorDeSenhas.jpg",
+    src: "/images/projects/GeradorDeSenhas.jpg",
     github: "https://github.com/S1NS3RO/Password-generator",
     deploy: "https://s1ns3ro.github.io/Password-generator",
     link: "/password-generator",
@@ -34,7 +34,7 @@ const projects = [
   {
     date: "08/09/2023",
     name: "Lista de Tarefas",
-    src: "/ListaDeTarefas.jpg",
+    src: "/images/projects/ListaDeTarefas.jpg",
     github: "https://github.com/S1NS3RO/Lista-de-tarefas",
     deploy: "https://s1ns3ro.github.io/Lista-de-tarefas",
     link: "/lista-de-tarefas",
@@ -48,7 +48,7 @@ const projects = [
   {
     date: "03/09/2023",
     name: "Horas do Dia",
-    src: "/HorasDoDia.jpg",
+    src: "/images/projects/HorasDoDia.jpg",
     github: "https://github.com/S1NS3RO/Horas-do-dia",
     deploy: "https://s1ns3ro.github.io/Horas-do-dia",
     link: "/horas-do-dia",
@@ -62,7 +62,7 @@ const projects = [
   {
     date: "14/09/2023",
     name: "Calculadora de Imc",
-    src: "/CalculadoraImc.jpg",
+    src: "/images/projects/CalculadoraImc.jpg",
     github: "https://github.com/S1NS3RO/Calculadora-imc",
     deploy: "https://calculadora-imc-dusky.vercel.app",
     link: "/calculadora-imc",
