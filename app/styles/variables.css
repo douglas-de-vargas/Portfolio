@@ -16,8 +16,8 @@
   --maxwidth: 1266px;
 
   /* Fontes */
-  --fontprimary: "Roboto", sans-serif;
-  --fontsecondary: "Ubuntu", sans-serif;
+  --fontprimary: 'Roboto', sans-serif;
+  --fontsecondary: 'Ubuntu', sans-serif;
 }
 
 :root.dark {
@@ -39,7 +39,7 @@
   /* Theme 1 */
   --body: #1d24334;
   --primary: #334756;
-  --secondary: rgb(51,71,86);
+  --secondary: rgb(51, 71, 86);
   --text: #e9e9e9;
   --border: rgb(38 45 53 / 50%);
   --projbuttons: rgb(8, 32, 50, 0.7);

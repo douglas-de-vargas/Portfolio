@@ -1,8 +1,6 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
-
-module.exports = {
-  trailingSlash: true,
+const nextConfig = {
+  trailingSlash: true
 }
 
-// nextConfig
+module.exports = nextConfig

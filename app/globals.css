@@ -18,8 +18,8 @@
   /* Sizes */
   --maxwidth: 1266px;
   /* Fontes */
-  --fontprimary: "Roboto", sans-serif;
-  --fontsecondary: "Ubuntu", sans-serif;
+  --fontprimary: 'Roboto', sans-serif;
+  --fontsecondary: 'Ubuntu', sans-serif;
 }
 
 :root.dark {
@@ -114,7 +114,7 @@ li {
 }
 
 header .active::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 30%;
   left: 0;
