@@ -1,6 +1,8 @@
 import React from 'react'
 
 import './globals.css'
+import '@/app/styles/variables.css'
+import '@/app/styles/darktheme.css'
 import '@/app/styles/projectcards.css'
 import '@/app/styles/responsive.css'
 

@@ -31,6 +31,8 @@
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  flex-wrap: wrap;
+  gap: 6px;
 }
 
 #techs {
@@ -45,6 +47,8 @@
 
 #links {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 6px;
 }
 

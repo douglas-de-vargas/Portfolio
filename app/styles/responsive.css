@@ -1,11 +1,22 @@
+@media (max-width: 300px) {
+  /* Telas muito pequenas a baixo de 300px */
+  #card-actions {
+    justify-content: center;
+  }
+}
+
 @media (min-width: 421px) {
+  /* Telas a cima de 420px */
   #project-list {
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 2rem;
   }
 
   #project {
     width: 350px;
-    background: red;
+    padding: 0.8rem;
+    border-radius: 4px;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
   }
 }

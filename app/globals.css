@@ -2,41 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  /* Normal Colors */
-  --body: hsl(210, 40%, 96.1%);
-  --main: white;
-  --primary: hsl(27, 96%, 61%);
-  --secondary: #ffffff;
-  --text: hsl(240, 5.9%, 20%);
-  --border: rgb(227, 227, 227);
-  --projbuttons: var(--primary);
-  --imgbefore: rgb(0 0 0 / 50%);
-  /* Links */
-  --link: hsl(240, 5.9%, 10%);
-  --fontweight: 400;
-  /* Sizes */
-  --maxwidth: 1266px;
-  /* Fontes */
-  --fontprimary: 'Roboto', sans-serif;
-  --fontsecondary: 'Ubuntu', sans-serif;
-}
-
-:root.dark {
-  /* Dark Theme */
-  --body: rgb(29, 36, 51);
-  --main: #30394281;
-  --primary: #262d35;
-  --secondary: #303942;
-  --text: #e3e0e0;
-  --border: rgba(38, 45, 53, 0.5);
-  --projbuttons: rgb(8, 32, 50, 0.7);
-  --imgbefore: rgb(0 0 0 / 85%);
-  /* Links */
-  --link: #f0a500;
-  --fontweight: 400;
-}
-
 * {
   color: var(--text);
   padding: 0;
