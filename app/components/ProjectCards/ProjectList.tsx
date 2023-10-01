@@ -12,7 +12,7 @@ import { TbBrandNextjs } from 'react-icons/tb'
 import { GoProjectSymlink } from 'react-icons/go'
 import { Project, formatDate } from './ProjectCard'
 
-export function ProjectList() {
+function ProjectList() {
   return (
     <>
       {projectsData.map((project: Project, index: number) => {
@@ -76,3 +76,4 @@ export function ProjectList() {
     </>
   )
 }
+export default ProjectList
