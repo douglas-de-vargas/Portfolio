@@ -112,13 +112,13 @@ function ProjectList() {
                   href={project.github}
                   target='_blank'
                   passHref>
-                  <BsGithub /> GitHub
+                  <BsGithub />{" "}GitHub
                 </Link>
                 <Link
                   href={project.deploy}
                   target='_blank'
                   passHref>
-                  <GoProjectSymlink /> Deploy
+                  <GoProjectSymlink /> {" "}Deploy
                 </Link>
               </div>
             </div>

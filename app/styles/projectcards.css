@@ -54,6 +54,7 @@
 
 #links a {
   display: flex;
+  gap: 3px;
   align-items: center;
   padding: 4px 8px 2px;
   background: var(--primary);
