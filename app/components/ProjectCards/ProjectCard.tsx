@@ -76,9 +76,7 @@ function ProjectList() {
           <article
             id='project'
             key={index}>
-            <div
-              id='image-project'
-              className='flex justify-center relative'>
+            <div id='image-project'>
               <Link
                 href={project.deploy}
                 target='_blank'
@@ -90,40 +88,37 @@ function ProjectList() {
               </Link>
             </div>
             <h2>{project.name}</h2>
-            <p className='grow'>{project.desc}</p>
-            <span className='flex gap-1 text-[.95rem]'>
-              <BsCalendar2Date className='relative top-[1px]' />
-              {formattedDate}
+
+            <p id='description'>{project.desc}</p>
+
+            <span>
+              <BsCalendar2Date /> {formattedDate}
             </span>
 
-            <div id='actions-buttons'>
-              <div>
-                {project.code && (
-                  <span id='tech-icons'>
-                    {project.code.html5 ? <IoLogoHtml5 /> : null}
-                    {project.code.css3 ? <IoLogoCss3 /> : null}
-                    {project.code.tailwindcss ? <SiTailwindcss /> : null}
-                    {project.code.javascript ? <IoLogoJavascript /> : null}
-                    {project.code.reactjs ? <IoLogoReact /> : null}
-                    {project.code.nextjs ? <TbBrandNextjs /> : null}
-                    {project.code.typescript ? <SiTypescript /> : null}
-                  </span>
-                )}
-              </div>
-
+            <div id='card-actions'>
+              {project.code && (
+                <div id='techs'>
+                  {project.code.html5 ? <IoLogoHtml5 /> : null}
+                  {project.code.css3 ? <IoLogoCss3 /> : null}
+                  {project.code.tailwindcss ? <SiTailwindcss /> : null}
+                  {project.code.javascript ? <IoLogoJavascript /> : null}
+                  {project.code.reactjs ? <IoLogoReact /> : null}
+                  {project.code.nextjs ? <TbBrandNextjs /> : null}
+                  {project.code.typescript ? <SiTypescript /> : null}
+                </div>
+              )}
               <div id='links'>
                 <Link
                   href={project.github}
                   target='_blank'
                   passHref>
-                  <BsGithub className='fill-link relative top-0.5' /> GitHub
+                  <BsGithub /> GitHub
                 </Link>
                 <Link
                   href={project.deploy}
                   target='_blank'
                   passHref>
-                  <GoProjectSymlink className='fill-link relative top-0.5' />{' '}
-                  Deploy
+                  <GoProjectSymlink /> Deploy
                 </Link>
               </div>
             </div>

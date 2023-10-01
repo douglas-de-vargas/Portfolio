@@ -2,10 +2,10 @@
   #project-list {
     flex-direction: row;
     flex-wrap: wrap;
-    background: red;
   }
 
   #project {
     width: 350px;
+    background: red;
   }
 }
