@@ -1,4 +1,4 @@
-import ProjectList from './components/ProjectCards/ProjectList'
+import ProjectList from '@/app/components/ProjectCards/ProjectCard'
 
 export default function Home() {
   return (
