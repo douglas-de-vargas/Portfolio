@@ -1,5 +1,4 @@
 'use client'
-import React from 'react'
 import Link from 'next/link'
 import { ImHome3 } from 'react-icons/im'
 import { GoMoon, GoSun } from 'react-icons/go'

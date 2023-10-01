@@ -4,7 +4,7 @@ import '@/app/styles/styles.css'
 import type { Metadata } from 'next'
 import Header from '@/app/components/Layout/Header'
 import Footer from '@/app/components/Layout/Footer'
-import ThemeContextProvider from '@/app/hooks/useTheme'
+import ThemeContextProvider from './hooks/useTheme'
 
 export const metadata: Metadata = {
   title: 'Douglas Vargas',
@@ -21,7 +21,6 @@ export default async function RootLayout({
       <html lang='pt-BR'>
         <body>
           <Header />
-
           <main>{children}</main>
           <Footer />
         </body>

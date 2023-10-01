@@ -7,7 +7,8 @@ function Footer() {
             &copy; 2023{' '}
             <a
               href='https://www.linkedin.com/in/douglas-vargas-a517b2288'
-              target='_blank'>
+              target='_blank'
+              rel='noreferrer'>
               {' '}
               Douglas
             </a>

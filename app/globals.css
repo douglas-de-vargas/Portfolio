@@ -67,18 +67,13 @@ main {
 
 #project-list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 3rem;
-}
-
-#project:first-of-type {
-  border-top: none;
-  padding-top: 0;
+  flex-wrap: wrap;
 }
 
 #project {
-  border-top: 5px solid blue;
-  padding-top: 3rem;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
   gap: 6px;
