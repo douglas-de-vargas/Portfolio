@@ -1,5 +1,9 @@
 import React from 'react'
+
 import './globals.css'
+import '@/app/styles/projectcards.css'
+import '@/app/styles/responsive.css'
+
 import type { Metadata } from 'next'
 import Header from '@/app/components/Layout/Header'
 import Footer from '@/app/components/Layout/Footer'

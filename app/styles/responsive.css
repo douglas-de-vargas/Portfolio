@@ -1,0 +1,11 @@
+@media (min-width: 421px) {
+  #project-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: red;
+  }
+
+  #project {
+    width: 350px;
+  }
+}
