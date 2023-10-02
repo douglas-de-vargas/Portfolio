@@ -15,11 +15,11 @@
 #image-project {
   display: flex;
   justify-content: center;
+  height: auto;
 }
 
 #image-project img {
   max-width: 100%;
-  height: 200px;
   object-fit: cover;
 }
 

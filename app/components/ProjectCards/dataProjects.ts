@@ -46,13 +46,13 @@ const projects = [
     }
   },
   {
-    date: '03/09/2023',
-    name: 'Horas do Dia',
+    date: '02/10/2023',
+    name: 'Horário Atual',
     src: '/images/projects/HorasDoDia.jpg',
     github: 'https://github.com/S1NS3RO/Horas-do-dia',
     deploy: 'https://s1ns3ro.github.io/Horas-do-dia',
     link: '/horas-do-dia',
-    desc: 'Mostra da data e hora em tempo real e apresenta mudanças visuais de acordo com o período do dia',
+    desc: `Este projeto me proporcionou um entendimento mais profundo dos conceitos fundamentais de manipulação do DOM com JavaScript e também sobre estilização usando CSS. Embora seja um projeto simples, ele me permitiu adquirir conhecimentos essenciais que abriram portas para o desenvolvimento de futuros projetos com base nas tecnologias que aprendi aqui. Esta aplicação tem como objetivo fornecer informações precisas sobre a data e hora, juntamente com uma saudação personalizada que varia de acordo com o período atual do dia para o usuário.`,
     code: {
       html5: true,
       css3: true,
@@ -68,9 +68,9 @@ const projects = [
     link: '/calculadora-imc',
     desc: 'Calcula o índice de massa corporal do usuário',
     code: {
-      html5: true,
       css3: true,
-      javascript: true
+      javascript: true,
+      reactjs: true
     }
   }
 ]
