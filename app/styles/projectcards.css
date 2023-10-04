@@ -23,6 +23,22 @@
   object-fit: cover;
 }
 
+#techs_name {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+#techs_name span {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background: #d3d3d3;
+  padding: 3px 5px;
+  border-radius: 4px;
+}
+
 #description {
   flex-grow: 1;
 }

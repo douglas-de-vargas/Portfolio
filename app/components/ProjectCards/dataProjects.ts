@@ -12,10 +12,10 @@ const projects = [
       html5: true,
       css3: true,
       javascript: true,
-      reactjs: false,
-      nextjs: false,
-      tailwindcss: false,
-      typescript: false,
+      reactjs: true,
+      nextjs: true,
+      tailwindcss: true,
+      typescript: true,
     }, */
   {
     date: '01/09/2023',
@@ -28,7 +28,11 @@ const projects = [
     code: {
       html5: true,
       css3: true,
-      javascript: true
+      javascript: true,
+      reactjs: true,
+      nextjs: true,
+      tailwindcss: true,
+      typescript: true,
     }
   },
   {
