@@ -48,7 +48,7 @@ const projects = [
   {
     date: '02/10/2023',
     name: 'Horário Atual',
-    src: '/images/projects/HorasDoDia.jpg',
+    src: '/images/projects/HorasDoDia_.jpg',
     github: 'https://github.com/S1NS3RO/Horas-do-dia',
     deploy: 'https://s1ns3ro.github.io/Horas-do-dia',
     link: '/horas-do-dia',

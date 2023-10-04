@@ -2,6 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
+.box-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  overflow: hidden;
+  flex: 1;
+  min-width: 250px;
+}
+
+.box-int {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.box-int svg {
+  font-size: 2rem;
+  margin-right: 15px;
+}
+
+.box-title_sub {
+  color: blue;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+
+.box-title_sub p {
+  font-size: 0.9rem;
+}
+
+.box button {
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 5px;
+  font-size: 1.1rem;
+  border: none;
+  padding: 5px 10px;
+  color: white !important;
+}
+
 * {
   color: var(--text);
   padding: 0;
@@ -55,7 +106,7 @@ li {
 }
 
 header .active::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 30%;
   left: 0;
