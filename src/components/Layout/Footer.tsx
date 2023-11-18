@@ -1,8 +1,8 @@
-function Footer() {
+export default function Footer() {
   return (
     <>
-      <footer className='w-full py-2 bg-primary'>
-        <div className='flex justify-center mx-auto w-full max-w-maxwidth text-sm'>
+      <footer>
+        <div id='footer-bar'>
           <p>
             &copy; 2023{' '}
             <a
@@ -19,5 +19,3 @@ function Footer() {
     </>
   )
 }
-
-export default Footer

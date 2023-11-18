@@ -6,14 +6,11 @@
   --secondary: #ffffff;
   --text: hsl(240, 5.9%, 20%);
   --border: rgb(227, 227, 227);
-  --projbuttons: var(--primary);
-  --imgbefore: rgb(0 0 0 / 50%);
+  --projButtons: var(--primary);
   /* Links */
   --link: hsl(240, 5.9%, 10%);
-  --fontweight: 400;
+  --fontWeight: 400;
   /* Sizes */
-  --maxwidth: 1266px;
-  /* Fontes */
-  --fontprimary: 'Roboto', sans-serif;
-  --fontsecondary: 'Ubuntu', sans-serif;
+  --maxWidth: 1266px;
+  --globalGap: .5rem;
 }

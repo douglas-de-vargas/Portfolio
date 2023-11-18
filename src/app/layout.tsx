@@ -1,15 +1,15 @@
-import React from 'react'
-
-import './globals.css'
-import '@/app/styles/variables.css'
-import '@/app/styles/darktheme.css'
-import '@/app/styles/projectcards.css'
-import '@/app/styles/responsive.css'
+import '@/styles/globals.scss'
+import '@/styles/variables.scss'
+import '@/styles/darkTheme.scss'
+import '@/styles/responsive.scss'
+import '@/styles/HeaderFooter.scss'
 
 import type { Metadata } from 'next'
-import Header from '@/app/components/Layout/Header'
-import Footer from '@/app/components/Layout/Footer'
-import ThemeContextProvider from './hooks/useTheme'
+
+import ThemeContextProvider from '@/hooks/useTheme'
+
+import Header from '@/components/Layout/Header'
+import Footer from '@/components/Layout/Footer'
 
 export const metadata: Metadata = {
   title: 'Douglas Vargas',
