@@ -77,7 +77,6 @@ Obs: Desenvolvi todo o código pelo celular, talvez jogar em um dispositivo móv
   },
   {
     date: '02/11/2023',
-    inProduction: true,
     name: 'Aplicativo de pedidos',
     image: '/images/projects/projectgas2irmaos.jpg',
     github: 'https://github.com/S1NS3RO/gas2irmaos',

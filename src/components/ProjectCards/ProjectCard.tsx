@@ -57,7 +57,6 @@ export default function ProjectCard() {
       {projects.map(
         ({
           date,
-          inProduction,
           name,
           image,
           desc,
@@ -140,7 +139,6 @@ export default function ProjectCard() {
               <p id='description'>{desc}</p>
               <span id='date'>
                 <BsCalendar2Date fill='#6e7681' /> {formattedDate}
-                {inProduction && <span id='date'> - Em produção</span>}
               </span>
               <div id='card-actions'>
                 <div id='links'>
