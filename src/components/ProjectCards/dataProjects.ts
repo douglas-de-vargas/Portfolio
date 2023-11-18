@@ -78,12 +78,12 @@ Obs: Desenvolvi todo o código pelo celular, talvez jogar em um dispositivo móv
   {
     date: '02/11/2023',
     inProduction: true,
-    name: 'Gás 2 Irmãos',
+    name: 'Aplicativo de pedidos',
     image: '/images/projects/projectgas2irmaos.jpg',
     github: 'https://github.com/S1NS3RO/gas2irmaos',
     deploy: 'https://gas2irmaos.vercel.app/',
     link: '#',
-    desc: 'Este projeto foi idealizado para facilitar os pedidos de gás para usuários reais, o projeto foi estruturado com base em uma empresa real da minha cidade.',
+    desc: `Este projeto destaca minha habilidade em desenvolver soluções práticas. Criado para simplificar pedidos de entrega, o aplicativo oferece uma experiência personalizada com base em qualquer empresa local. Este showcase demonstra minha capacidade de criar soluções eficientes e adaptáveis para diversas necessidades de delivery.`,
     code: {
       sass: true,
       nextjs: true,
