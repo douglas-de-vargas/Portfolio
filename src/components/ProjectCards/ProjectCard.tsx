@@ -55,15 +55,7 @@ export default function ProjectCard() {
   return (
     <>
       {projects.map(
-        ({
-          date,
-          name,
-          image,
-          desc,
-          github,
-          deploy,
-          code
-        }: iProjectProps) => {
+        ({ date, name, images, desc, github, deploy, code }: iProjectProps) => {
           const formattedDate: string = formatDate(date)
           return (
             <article
@@ -75,7 +67,7 @@ export default function ProjectCard() {
                   target='_blank'
                   passHref>
                   <img
-                    src={image}
+                    src={images && images.image}
                     alt={name}
                   />
                 </Link>
