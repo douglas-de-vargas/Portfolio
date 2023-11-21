@@ -7,7 +7,6 @@
 
 @media (min-width: 421px) {
   /* Telas a cima de 420px */
-
   #project-list {
     flex-direction: row !important;
     flex-wrap: wrap;
@@ -15,11 +14,5 @@
 
   #project {
     width: 300px !important;
-  }
-
-  .image-principal {
-    width: 100%;
-    height: 350px;
-    overflow: hidden;
   }
 }

@@ -1,14 +1,24 @@
+'use client'
 import '@/styles/ProjectCard.scss'
 
 //NextJs
 import Link from 'next/link'
+
+//reactjs
+import { useState } from 'react'
 
 //Data
 import { projects, iProjectProps } from './dataProjects'
 
 //Icons
 import { BsGithub, BsCalendar2Date } from 'react-icons/bs'
-import { IoLogoJavascript, IoLogoCss3, IoLogoSass, IoLogoHtml5, IoLogoReact } from 'react-icons/io5'
+import {
+  IoLogoJavascript,
+  IoLogoCss3,
+  IoLogoSass,
+  IoLogoHtml5,
+  IoLogoReact
+} from 'react-icons/io5'
 import { SiTailwindcss, SiTypescript } from 'react-icons/si'
 import { TbBrandNextjs } from 'react-icons/tb'
 import { GoProjectSymlink } from 'react-icons/go'
@@ -24,7 +34,20 @@ projects.sort((a, b) => {
 function formatDate(date: string): string {
   const [, month, year] = date.split('/')
 
-  const monthNames = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
+  const monthNames = [
+    'Jan',
+    'Fev',
+    'Mar',
+    'Abr',
+    'Mai',
+    'Jun',
+    'Jul',
+    'Ago',
+    'Set',
+    'Out',
+    'Nov',
+    'Dez'
+  ]
 
   const monthNamed = monthNames[parseInt(month, 10) - 1]
 
@@ -33,98 +56,151 @@ function formatDate(date: string): string {
 
 // *** //
 export default function ProjectCard() {
+  const [mainImages, setMainImages] = useState({})
+
+  const handleImage = (projectName, image) => {
+    // Atualiza o estado para o projeto específico
+    setMainImages(prevImages => ({
+      ...prevImages,
+      [projectName]: image
+    }))
+  }
+
   return (
     <>
-      {projects.map(({ date, name, images, desc, github, deploy, code }: iProjectProps) => {
-        const formattedDate: string = formatDate(date)
-        return (
-          <article id="project" key={name}>
-            <div id="image-project">
-              <div className="image-principal">
-                <img className="__principal" src={images.image} alt={name} />
+      {projects.map(
+        ({ date, name, images, desc, github, deploy, code }: iProjectProps) => {
+          const formattedDate: string = formatDate(date)
+          return (
+            <article
+              id='project'
+              key={name}>
+              <div id='image-project'>
+                <img
+                  className='__principal'
+                  src={mainImages[name] || images.image}
+                  alt={name}
+                />
+                {images.image1 && (
+                  <div className='more-images'>
+                    {images.image1 && (
+                      <img
+                        onClick={() => handleImage(name, images.image1)}
+                        src={images.image1}
+                        alt={name}
+                      />
+                    )}
+                    {images.image2 && (
+                      <img
+                        onClick={() => handleImage(name, images.image2)}
+                        src={images.image2}
+                        alt={name}
+                      />
+                    )}
+                    {images.image3 && (
+                      <img
+                        onClick={() => handleImage(name, images.image3)}
+                        src={images.image3}
+                        alt={name}
+                      />
+                    )}
+                    {images.image4 && (
+                      <img
+                        onClick={() => handleImage(name, images.image4)}
+                        src={images.image4}
+                        alt={name}
+                      />
+                    )}
+                    {images.image && (
+                      <img
+                        onClick={() => handleImage(name, images.image)}
+                        src={images.image}
+                        alt={name}
+                      />
+                    )}
+                  </div>
+                )}
               </div>
-              {images.image1 && (
-                <div className="more-images">
-                  {images.image1 && <img src={images.image1} alt={name} />}
-                  {images.image2 && <img src={images.image2} alt={name} />}
-                  {images.image3 && <img src={images.image3} alt={name} />}
-                  {images.image4 && <img src={images.image4} alt={name} />}
-                </div>
-              )}
-            </div>
-            <h2>{name}</h2>
-            <div>
-              {code && (
-                <div id="techs_name">
-                  {code.nextjs && (
-                    <span>
-                      <TbBrandNextjs fill="transparent" />
-                      Next.js
-                    </span>
-                  )}
-                  {code.reactjs && (
-                    <span>
-                      <IoLogoReact fill="#18b3df" />
-                      React JS
-                    </span>
-                  )}
-                  {code.javascript && (
-                    <span>
-                      <IoLogoJavascript fill="#f0d81e" />
-                      JavaScript
-                    </span>
-                  )}
-                  {code.typescript && (
-                    <span>
-                      <SiTypescript fill="#2f74c1" />
-                      TypeScript
-                    </span>
-                  )}
-                  {code.html5 && (
-                    <span>
-                      <IoLogoHtml5 fill="#e95e25" />
-                      HTML5
-                    </span>
-                  )}
-                  {code.css3 && (
-                    <span>
-                      <IoLogoCss3 fill="#3f95d0" />
-                      CSS3
-                    </span>
-                  )}
-                  {code.sass && (
-                    <span>
-                      <IoLogoSass fill="#cf649a" />
-                      Sass
-                    </span>
-                  )}
-                  {code.tailwindcss && (
-                    <span>
-                      <SiTailwindcss fill="#36b7f0" />
-                      Tailwind CSS
-                    </span>
-                  )}
-                </div>
-              )}
-            </div>
+              <h2>{name}</h2>
+              <div>
+                {code && (
+                  <div id='techs_name'>
+                    {code.nextjs && (
+                      <span>
+                        <TbBrandNextjs fill='transparent' />
+                        Next.js
+                      </span>
+                    )}
+                    {code.reactjs && (
+                      <span>
+                        <IoLogoReact fill='#18b3df' />
+                        React JS
+                      </span>
+                    )}
+                    {code.javascript && (
+                      <span>
+                        <IoLogoJavascript fill='#f0d81e' />
+                        JavaScript
+                      </span>
+                    )}
+                    {code.typescript && (
+                      <span>
+                        <SiTypescript fill='#2f74c1' />
+                        TypeScript
+                      </span>
+                    )}
+                    {code.html5 && (
+                      <span>
+                        <IoLogoHtml5 fill='#e95e25' />
+                        HTML5
+                      </span>
+                    )}
+                    {code.css3 && (
+                      <span>
+                        <IoLogoCss3 fill='#3f95d0' />
+                        CSS3
+                      </span>
+                    )}
+                    {code.sass && (
+                      <span>
+                        <IoLogoSass fill='#cf649a' />
+                        Sass
+                      </span>
+                    )}
+                    {code.tailwindcss && (
+                      <span>
+                        <SiTailwindcss fill='#36b7f0' />
+                        Tailwind CSS
+                      </span>
+                    )}
+                  </div>
+                )}
+              </div>
 
-            <p id="description">{desc}</p>
-            <span id="date">
-              <BsCalendar2Date fill="#6e7681" /> {formattedDate}
-            </span>
-            <div id="card-actions">
-              <div id="links">
-                <Link href={github} target="_blank" passHref>
-                  <BsGithub /> GitHub
-                </Link>
-                <Link href={deploy} target="_blank" passHref>
-                  <GoProjectSymlink /> Deploy
-                </Link>
+              <p id='description'>{desc}</p>
+              <span id='date'>
+                <BsCalendar2Date fill='#6e7681' /> {formattedDate}
+              </span>
+              <div id='card-actions'>
+                <div id='links'>
+                  <Link
+                    href={github}
+                    target='_blank'
+                    passHref>
+                    <BsGithub /> GitHub
+                  </Link>
+                  <Link
+                    href={deploy}
+                    target='_blank'
+                    passHref>
+                    <GoProjectSymlink /> Deploy
+                  </Link>
+                </div>
               </div>
-            </div>
-          </article>
-        )
-      })}
+            </article>
+          )
+        }
+      )}
     </>
   )
 }
