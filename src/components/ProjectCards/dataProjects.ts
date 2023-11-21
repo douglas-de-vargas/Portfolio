@@ -2,8 +2,8 @@
 export interface iProjectProps {
   date: string
   name: string
-  images?: {
-    image?: string
+  images: {
+    image: string
     image1?: string
     image2?: string
     image3?: string
@@ -34,7 +34,8 @@ export const projects = [
       image: '/images/projects/',
       image1: '',
       image2: '',
-      image3: ''
+      image3: '',
+      image4: ''
     },
     github: '',
     deploy: '',
@@ -56,7 +57,7 @@ export const projects = [
     name: 'Jogo do Super-Mario em JavaScript',
     images: {
       image: '/images/projects/super-mario/super-mario-game-over.jpg',
-      image1: '/images/projects/super-mario/super-mario.jpg'
+      image1: '/images/projects/super-mario/super-mario.jpg',
     },
     github: 'https://github.com/S1NS3RO/Super-Mario',
     deploy: 'https://super-mario-zeta.vercel.app/',
@@ -73,8 +74,8 @@ Obs: Desenvolvi todo o código pelo celular, talvez jogar em um dispositivo móv
     code: {
       html5: true,
       css3: true,
-      javascript: true
-    }
+      javascript: true,
+    },
   },
   {
     date: '02/11/2023',
@@ -82,7 +83,9 @@ Obs: Desenvolvi todo o código pelo celular, talvez jogar em um dispositivo móv
     images: {
       image: '/images/projects/delivery-app/delivery-gas.jpg',
       image1: '/images/projects/delivery-app/delivery-gas1.jpg',
-      image2: '/images/projects/delivery-app/delivery-gas2.jpg'
+      image2: '/images/projects/delivery-app/delivery-gas2.jpg',
+      image3: '/images/projects/delivery-app/delivery-gas2.jpg',
+      image4: '/images/projects/delivery-app/delivery-gas2.jpg',
     },
     github: 'https://github.com/S1NS3RO/gas2irmaos',
     deploy: 'https://gas2irmaos.vercel.app/',
@@ -91,14 +94,14 @@ Obs: Desenvolvi todo o código pelo celular, talvez jogar em um dispositivo móv
     code: {
       sass: true,
       nextjs: true,
-      typescript: true
-    }
+      typescript: true,
+    },
   },
   {
     date: '01/09/2023',
     name: 'Gerador de Senhas',
     images: {
-      image: '/images/projects/gerador-de-senhas/GeradorDeSenhas.jpg'
+      image: '/images/projects/gerador-de-senhas/GeradorDeSenhas.jpg',
     },
     github: 'https://github.com/S1NS3RO/Password-generator',
     deploy: 'https://s1ns3ro.github.io/Password-generator',
@@ -107,14 +110,14 @@ Obs: Desenvolvi todo o código pelo celular, talvez jogar em um dispositivo móv
     code: {
       html5: true,
       css3: true,
-      javascript: true
-    }
+      javascript: true,
+    },
   },
   {
     date: '08/09/2023',
     name: 'Lista de Tarefas',
     images: {
-      image: '/images/projects/todo-list/ListaDeTarefas.jpg'
+      image: '/images/projects/todo-list/ListaDeTarefas.jpg',
     },
     github: 'https://github.com/S1NS3RO/Lista-de-tarefas',
     deploy: 'https://s1ns3ro.github.io/Lista-de-tarefas',
@@ -123,14 +126,14 @@ Obs: Desenvolvi todo o código pelo celular, talvez jogar em um dispositivo móv
     code: {
       html5: true,
       css3: true,
-      javascript: true
-    }
+      javascript: true,
+    },
   },
   {
     date: '02/10/2023',
     name: 'Horário Atual',
     images: {
-      image: '/images/projects/horas-do-dia/HorasDoDia_.jpg'
+      image: '/images/projects/horas-do-dia/HorasDoDia_.jpg',
     },
     github: 'https://github.com/S1NS3RO/Horas-do-dia',
     deploy: 'https://s1ns3ro.github.io/Horas-do-dia',
@@ -139,14 +142,14 @@ Obs: Desenvolvi todo o código pelo celular, talvez jogar em um dispositivo móv
     code: {
       html5: true,
       css3: true,
-      javascript: true
-    }
+      javascript: true,
+    },
   },
   {
     date: '14/09/2023',
     name: 'Calculadora de Imc',
     images: {
-      image: '/images/projects/calculadora-imc/CalculadoraImc.jpg'
+      image: '/images/projects/calculadora-imc/CalculadoraImc.jpg',
     },
     github: 'https://github.com/S1NS3RO/Calculadora-imc',
     deploy: 'https://calculadora-imc-dusky.vercel.app',
@@ -155,7 +158,7 @@ Obs: Desenvolvi todo o código pelo celular, talvez jogar em um dispositivo móv
     code: {
       css3: true,
       javascript: true,
-      reactjs: true
-    }
-  }
+      reactjs: true,
+    },
+  },
 ]
