@@ -62,15 +62,43 @@ export default function ProjectCard() {
               id='project'
               key={name}>
               <div id='image-project'>
-                <Link
-                  href={deploy}
-                  target='_blank'
-                  passHref>
-                  <img
-                    src={images && images.image}
-                    alt={name}
-                  />
-                </Link>
+                <img
+                  src={images && images.image}
+                  alt={name}
+                />
+                <div className='more-images'>
+                  {images.image && (
+                    <img
+                      className='selected'
+                      src={images && images.image}
+                      alt={name}
+                    />
+                  )}
+                  {images.image1 && (
+                    <img
+                      src={images && images.image1}
+                      alt={name}
+                    />
+                  )}
+                  {images.image2 && (
+                    <img
+                      src={images && images.image2}
+                      alt={name}
+                    />
+                  )}
+                  {images.image3 && (
+                    <img
+                      src={images && images.image3}
+                      alt={name}
+                    />
+                  )}
+                  {images.image4 && (
+                    <img
+                      src={images && images.image4}
+                      alt={name}
+                    />
+                  )}
+                </div>
               </div>
               <h2>{name}</h2>
               <div>

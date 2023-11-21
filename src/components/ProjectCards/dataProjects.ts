@@ -98,7 +98,7 @@ Obs: Desenvolvi todo o código pelo celular, talvez jogar em um dispositivo móv
     date: '01/09/2023',
     name: 'Gerador de Senhas',
     images: {
-      image: '/images/projects/GeradorDeSenhas.jpg'
+      image: '/images/projects/gerador-de-senhas/GeradorDeSenhas.jpg'
     },
     github: 'https://github.com/S1NS3RO/Password-generator',
     deploy: 'https://s1ns3ro.github.io/Password-generator',
@@ -114,7 +114,7 @@ Obs: Desenvolvi todo o código pelo celular, talvez jogar em um dispositivo móv
     date: '08/09/2023',
     name: 'Lista de Tarefas',
     images: {
-      image: '/images/projects/ListaDeTarefas.jpg'
+      image: '/images/projects/todo-list/ListaDeTarefas.jpg'
     },
     github: 'https://github.com/S1NS3RO/Lista-de-tarefas',
     deploy: 'https://s1ns3ro.github.io/Lista-de-tarefas',
@@ -130,7 +130,7 @@ Obs: Desenvolvi todo o código pelo celular, talvez jogar em um dispositivo móv
     date: '02/10/2023',
     name: 'Horário Atual',
     images: {
-      image: '/images/projects/HorasDoDia_.jpg'
+      image: '/images/projects/horas-do-dia/HorasDoDia_.jpg'
     },
     github: 'https://github.com/S1NS3RO/Horas-do-dia',
     deploy: 'https://s1ns3ro.github.io/Horas-do-dia',
@@ -146,7 +146,7 @@ Obs: Desenvolvi todo o código pelo celular, talvez jogar em um dispositivo móv
     date: '14/09/2023',
     name: 'Calculadora de Imc',
     images: {
-      image: '/images/projects/CalculadoraImc.jpg'
+      image: '/images/projects/calculadora-imc/CalculadoraImc.jpg'
     },
     github: 'https://github.com/S1NS3RO/Calculadora-imc',
     deploy: 'https://calculadora-imc-dusky.vercel.app',

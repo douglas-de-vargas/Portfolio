@@ -14,13 +14,34 @@
 
 #image-project {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   height: auto;
+  gap: 0.3rem;
+  border-radius: 2px;
 }
 
 #image-project img {
   max-width: 100%;
+}
+
+.more-images {
+  overflow-y: hidden;
+  display: flex;
+  gap: 0.3rem;
+}
+
+.more-images img {
+  border: 1px solid var(--primary);
+  width: 100px;
+  height: 100px;
+  border-radius: 3px;
   object-fit: cover;
+}
+
+.more-images .selected {
+  position: relative;
+  border: 2px solid blue;
 }
 
 #techs_name {
