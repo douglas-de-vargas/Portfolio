@@ -56,14 +56,20 @@ function formatDate(date: string): string {
 
 // *** //
 export default function ProjectCard() {
-  const [mainImages, setMainImages] = useState({})
+  interface ImainImages {
+    [key: string]: string
+  }
+  const [mainImages, setMainImages] = useState<ImainImages | undefined>({})
 
-  const handleImage = (projectName, image) => {
-    // Atualiza o estado para o projeto específico
-    setMainImages(prevImages => ({
-      ...prevImages,
-      [projectName]: image
-    }))
+  const handleImage = (projectName: string, image?: string) => {
+    if (image) {
+      setMainImages(prevImages => ({
+        ...prevImages!,
+        [projectName]: image
+      }))
+    } else {
+      console.log('image is undefined')
+    }
   }
 
   return (
@@ -78,11 +84,22 @@ export default function ProjectCard() {
               <div id='image-project'>
                 <img
                   className='__principal'
-                  src={mainImages[name] || images.image}
+                  src={
+                    mainImages && mainImages[name]
+                      ? mainImages[name]
+                      : images.image
+                  }
                   alt={name}
                 />
                 {images.image1 && (
                   <div className='more-images'>
+                    {images.image && (
+                      <img
+                        onClick={() => handleImage(name, images.image)}
+                        src={images.image}
+                        alt={name}
+                      />
+                    )}
                     {images.image1 && (
                       <img
                         onClick={() => handleImage(name, images.image1)}
@@ -108,13 +125,6 @@ export default function ProjectCard() {
                       <img
                         onClick={() => handleImage(name, images.image4)}
                         src={images.image4}
-                        alt={name}
-                      />
-                    )}
-                    {images.image && (
-                      <img
-                        onClick={() => handleImage(name, images.image)}
-                        src={images.image}
                         alt={name}
                       />
                     )}
