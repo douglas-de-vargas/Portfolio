@@ -1,14 +1,13 @@
-'use client'
 import '@/styles/ProjectCard.scss'
 
 //NextJs
 import Link from 'next/link'
 
-//reactjs
-import { useState } from 'react'
-
 //Data
 import { projects, iProjectProps } from './dataProjects'
+
+//Components
+import Carousel from './Carousel'
 
 //Icons
 import { BsGithub, BsCalendar2Date } from 'react-icons/bs'
@@ -56,22 +55,6 @@ function formatDate(date: string): string {
 
 // *** //
 export default function ProjectCard() {
-  interface ImainImages {
-    [key: string]: string
-  }
-  const [mainImages, setMainImages] = useState<ImainImages | undefined>({})
-
-  const handleImage = (projectName: string, image?: string) => {
-    if (image) {
-      setMainImages(prevImages => ({
-        ...prevImages!,
-        [projectName]: image
-      }))
-    } else {
-      console.log('image is undefined')
-    }
-  }
-
   return (
     <>
       {projects.map(
@@ -81,56 +64,10 @@ export default function ProjectCard() {
             <article
               id='project'
               key={name}>
-              <div id='image-project'>
-                <img
-                  className='__principal'
-                  src={
-                    mainImages && mainImages[name]
-                      ? mainImages[name]
-                      : images.image
-                  }
-                  alt={name}
-                />
-                {images.image1 && (
-                  <div className='more-images'>
-                    {images.image && (
-                      <img
-                        onClick={() => handleImage(name, images.image)}
-                        src={images.image}
-                        alt={name}
-                      />
-                    )}
-                    {images.image1 && (
-                      <img
-                        onClick={() => handleImage(name, images.image1)}
-                        src={images.image1}
-                        alt={name}
-                      />
-                    )}
-                    {images.image2 && (
-                      <img
-                        onClick={() => handleImage(name, images.image2)}
-                        src={images.image2}
-                        alt={name}
-                      />
-                    )}
-                    {images.image3 && (
-                      <img
-                        onClick={() => handleImage(name, images.image3)}
-                        src={images.image3}
-                        alt={name}
-                      />
-                    )}
-                    {images.image4 && (
-                      <img
-                        onClick={() => handleImage(name, images.image4)}
-                        src={images.image4}
-                        alt={name}
-                      />
-                    )}
-                  </div>
-                )}
-              </div>
+              <Carousel
+                name={name}
+                images={images}
+              />
               <h2>{name}</h2>
               <div>
                 {code && (
