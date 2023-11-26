@@ -53,7 +53,7 @@ export const projects = [
     }
   }, */
   {
-    date: '18/11/2023',
+    date: '26/11/2023',
     name: 'Jogo do Super-Mario em JavaScript',
     images: {
       image: '/images/projects/super-mario/super-mario-game-over.jpg',

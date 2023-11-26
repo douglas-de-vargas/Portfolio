@@ -4,7 +4,7 @@ import '@/styles/ProjectCard.scss'
 import Link from 'next/link'
 
 //Data
-import { projects, iProjectProps } from './dataProjects'
+import { projects, iProjectProps } from '@/data/dataProjects'
 
 //Components
 import Carousel from './Carousel'
