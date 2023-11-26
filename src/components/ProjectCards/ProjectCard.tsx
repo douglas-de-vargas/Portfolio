@@ -64,70 +64,73 @@ export default function ProjectCard() {
             <article
               id='project'
               key={name}>
+              
               <Carousel
                 name={name}
                 images={images}
               />
+              
               <h2>{name}</h2>
-              <div>
-                {code && (
-                  <div id='techs_name'>
-                    {code.nextjs && (
-                      <span>
-                        <TbBrandNextjs fill='transparent' />
-                        Next.js
-                      </span>
-                    )}
-                    {code.reactjs && (
-                      <span>
-                        <IoLogoReact fill='#18b3df' />
-                        React JS
-                      </span>
-                    )}
-                    {code.javascript && (
-                      <span>
-                        <IoLogoJavascript fill='#f0d81e' />
-                        JavaScript
-                      </span>
-                    )}
-                    {code.typescript && (
-                      <span>
-                        <SiTypescript fill='#2f74c1' />
-                        TypeScript
-                      </span>
-                    )}
-                    {code.html5 && (
-                      <span>
-                        <IoLogoHtml5 fill='#e95e25' />
-                        HTML5
-                      </span>
-                    )}
-                    {code.css3 && (
-                      <span>
-                        <IoLogoCss3 fill='#3f95d0' />
-                        CSS3
-                      </span>
-                    )}
-                    {code.sass && (
-                      <span>
-                        <IoLogoSass fill='#cf649a' />
-                        Sass
-                      </span>
-                    )}
-                    {code.tailwindcss && (
-                      <span>
-                        <SiTailwindcss fill='#36b7f0' />
-                        Tailwind CSS
-                      </span>
-                    )}
-                  </div>
-                )}
-              </div>
+              
+              {code && (
+                <div className='techs_name'>
+                  {code.nextjs && (
+                    <span>
+                      <TbBrandNextjs fill='transparent' />
+                      Next.js
+                    </span>
+                  )}
+                  {code.reactjs && (
+                    <span>
+                      <IoLogoReact fill='#18b3df' />
+                      React JS
+                    </span>
+                  )}
+                  {code.javascript && (
+                    <span>
+                      <IoLogoJavascript fill='#f0d81e' />
+                      JavaScript
+                    </span>
+                  )}
+                  {code.typescript && (
+                    <span>
+                      <SiTypescript fill='#2f74c1' />
+                      TypeScript
+                    </span>
+                  )}
+                  {code.html5 && (
+                    <span>
+                      <IoLogoHtml5 fill='#e95e25' />
+                      HTML5
+                    </span>
+                  )}
+                  {code.css3 && (
+                    <span>
+                      <IoLogoCss3 fill='#3f95d0' />
+                      CSS3
+                    </span>
+                  )}
+                  {code.sass && (
+                    <span>
+                      <IoLogoSass fill='#cf649a' />
+                      Sass
+                    </span>
+                  )}
+                  {code.tailwindcss && (
+                    <span>
+                      <SiTailwindcss fill='#36b7f0' />
+                      Tailwind CSS
+                    </span>
+                  )}
+                </div>
+              )}
 
               <p id='description'>{desc}</p>
+              
               <span id='date'>
                 <BsCalendar2Date fill='#6e7681' /> {formattedDate}
               </span>
+              
               <div id='card-actions'>
                 <div id='links'>
                   <Link

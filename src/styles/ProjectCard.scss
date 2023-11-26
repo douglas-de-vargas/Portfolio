@@ -6,72 +6,61 @@
   justify-content: center;
 }
 
-.selected {
-  border: 1px solid red;
-}
-
 #project {
   display: flex;
   flex-direction: column;
   gap: 6px;
   position: relative;
-  background: white;
+  background: var(--secondary);
   border-radius: 4px;
   padding: 10px;
   width: 100%; /* mobile */
 }
 
-#image-project {
+// Componente Carousel.tsx
+.c-image_project {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  gap: 0.3rem;
-  border-radius: 2px;
-  position: relative;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  border-radius: 4px;
+  gap: 0.5rem;
   overflow: hidden;
-  background: red;
+
+  .principal {
+    max-width: 100%;
+    border-radius: 4px;
+  }
+
+  .more-images {
+    display: flex;
+    gap: 0.3rem;
+    width: 100%;
+
+    img {
+      border-radius: 4px;
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border: 1px solid var(--border);
+    }
+  }
 }
 
-#image-project img {
-  max-width: 100%;
-}
-
-.more-images {
-  display: flex;
-  gap: 0.3rem;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 5px;
-  justify-content: center;
-}
-
-.more-images img {
-  border-radius: 3px;
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-}
-
-#techs_name {
+.techs_name {
   display: flex;
   align-items: center;
   gap: 5px;
   flex-wrap: wrap;
-}
 
-#techs_name span {
-  display: flex;
-  align-items: center;
-  gap: 2px;
-  background: #d3d3d3;
-  padding: 3px 5px;
-  border-radius: 4px;
+  span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: var(--tech-tags);
+    padding: 3px 7px;
+    border-radius: 4px;
+    color: var(--link);
+  }
 }
 
 #description {
@@ -89,17 +78,6 @@
   align-items: stretch;
   flex-wrap: wrap;
   gap: 6px;
-}
-
-#techs {
-  display: flex;
-  align-items: center;
-  background: var(--primary);
-  padding: 5px 6px 2px;
-  gap: 6px;
-  border-radius: 4px;
-  font-size: 1.1rem;
-}
 
 #links {
   display: flex;
@@ -118,8 +96,19 @@
   font-size: 1.1rem;
 }
 
-#card-actions svg {
+ svg {
   position: relative;
   bottom: 1px;
   fill: var(--text);
 }
+}
+
+/*#techs {
+  display: flex;
+  align-items: center;
+  background: var(--primary);
+  padding: 5px 6px 2px;
+  gap: 6px;
+  border-radius: 4px;
+  font-size: 1.1rem;
+}*/

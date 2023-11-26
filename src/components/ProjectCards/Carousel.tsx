@@ -2,9 +2,9 @@
 import React, { useState } from 'react'
 
 interface ImainImages {
-    [key: string]: string
-  }
-  
+  [key: string]: string
+}
+
 interface CarouselProps {
   name: string
   images: {
@@ -17,7 +17,6 @@ interface CarouselProps {
 }
 
 const Carousel: React.FC<CarouselProps> = ({ name, images }) => {
-
   const [mainImages, setMainImages] = useState<ImainImages | undefined>({})
 
   const handleImage = (projectName: string, image?: string) => {
@@ -32,9 +31,9 @@ const Carousel: React.FC<CarouselProps> = ({ name, images }) => {
   }
 
   return (
-    <div id='image-project'>
+    <div className='c-image_project'>
       <img
-        className='__principal'
+        className='principal'
         src={mainImages && mainImages[name] ? mainImages[name] : images.image}
         alt={name}
       />

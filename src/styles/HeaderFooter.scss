@@ -4,7 +4,9 @@ header {
   position: sticky;
   top: 0;
   z-index: 50;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  box-shadow:
+    0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px -1px rgba(0, 0, 0, 0.1);
 }
 
 #header-bar {
@@ -22,7 +24,6 @@ header {
 #header-bar_links {
   display: flex;
   align-items: stretch;
-  gap: var(--globalGap);
 }
 
 #classLinks {
@@ -36,8 +37,8 @@ header {
 
 #classLinks svg {
   position: relative;
-  bottom: 3px;
-  font-size: 1.25rem; /* 20px */
+  bottom: 2px;
+  font-size: 1.375rem; /* 22px */
   line-height: 1.75rem; /* 28px */
 }
 
@@ -54,11 +55,10 @@ header {
   position: relative;
 }
 
-header .active::before,
-#ico::before {
-  content: "";
+header .active::before {
+  content: '';
   position: absolute;
-  width: 30%;
+  width: 36px;
   left: 0;
   height: 2px;
   bottom: 5px;
@@ -67,8 +67,7 @@ header .active::before,
   transition: 0.2s;
 }
 
-.active:hover::before,
-#ico:hover::before {
+.active:hover::before {
   width: 100%;
 }
 

@@ -78,7 +78,7 @@ Obs: Desenvolvi todo o código pelo celular, talvez jogar em um dispositivo móv
     }
   },
   {
-    date: '02/11/2023',
+    date: '26/11/2023',
     name: 'Aplicativo de pedidos',
     images: {
       image: '/images/projects/delivery-app/delivery-gas.jpg',
