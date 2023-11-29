@@ -32,11 +32,12 @@ const Carousel: React.FC<CarouselProps> = ({ name, images }) => {
 
   return (
     <div className='c-image_project'>
-      <img
-        className='principal'
-        src={mainImages && mainImages[name] ? mainImages[name] : images.image}
-        alt={name}
-      />
+      <div className='principal'>
+        <img
+          src={mainImages && mainImages[name] ? mainImages[name] : images.image}
+          alt={name}
+        />
+      </div>
       <div className='more-images'>
         {Object.values(images).map(
           (img, index) =>

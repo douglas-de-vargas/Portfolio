@@ -55,7 +55,7 @@ export default function ProjectCard() {
         const formattedDate: string = formatDate(date)
         return (
           <article
-            id='project'
+            className='project'
             key={name}>
             <Carousel
               name={name}

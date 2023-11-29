@@ -11,7 +11,7 @@ export default function Home() {
           e desenvolver minhas habilidades como desenvolvedor.
         </p>
       </div>
-      <section id='project-list'>
+      <section className='project-list'>
         <ProjectCard />
       </section>
     </>

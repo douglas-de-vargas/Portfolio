@@ -6,6 +6,20 @@
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--tech-tags);
+  border-radius: 5px;
+  border: none;
+}
+
 body {
   display: flex;
   flex-direction: column;

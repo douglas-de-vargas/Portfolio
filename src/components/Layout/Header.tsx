@@ -1,13 +1,18 @@
 'use client'
+
+// NextJs
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
+// React-icons
 import { ImHome3 } from 'react-icons/im'
 import { GoMoon, GoSun } from 'react-icons/go'
 import { BsLinkedin, BsGithub } from 'react-icons/bs'
 
+// Context
 import { useTheme } from '@/hooks/useTheme'
 
+/***/
 export default function Header() {
   const { theme, setTheme } = useTheme()
   const pathname = usePathname()
