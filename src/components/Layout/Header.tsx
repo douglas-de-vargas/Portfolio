@@ -1,8 +1,6 @@
-'use client'
-
+"use client"
 // NextJs
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 
 // React-icons
 import { ImHome3 } from 'react-icons/im'
@@ -15,8 +13,6 @@ import { useTheme } from '@/hooks/useTheme'
 /***/
 export default function Header() {
   const { theme, setTheme } = useTheme()
-  const pathname = usePathname()
-
   return (
     <>
       <header>
@@ -24,7 +20,6 @@ export default function Header() {
           <div id='header-bar_links'>
             <Link
               id='classLinks'
-              className={pathname === '/' ? 'active' : ''}
               href='/'
               passHref>
               <ImHome3 /> Douglas
@@ -33,10 +28,16 @@ export default function Header() {
 
           <div id='header-bar_links'>
             <div id='ico'>
-              <BsGithub />
-
-              <BsLinkedin />
-
+              <Link
+                href='https://github.com/S1NS3RO?tab=repositories'
+                target='_blank'>
+                <BsGithub />
+              </Link>
+              <Link
+                href='https://br.linkedin.com/in/douglas-vargas-a517b2288'
+                target='_blank'>
+                <BsLinkedin />
+              </Link>
               {theme === 'light' ? (
                 <div onClick={() => setTheme('dark')}>
                   <GoSun />
