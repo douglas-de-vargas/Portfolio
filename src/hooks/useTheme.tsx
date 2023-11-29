@@ -1,11 +1,5 @@
 'use client'
-import React, {
-  useContext,
-  createContext,
-  useState,
-  useEffect,
-  ReactNode
-} from 'react'
+import React, { useContext, createContext, useState, useEffect, ReactNode } from 'react'
 
 // Define um tipo para o contexto
 type ThemeContextType = {
@@ -15,15 +9,9 @@ type ThemeContextType = {
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined)
 
-export default function ThemeContextProvider({
-  children
-}: {
-  children: ReactNode
-}) {
+export default function ThemeContextProvider({ children }: { children: ReactNode }) {
   const [theme, setTheme] = useState<string>(
-    typeof window !== 'undefined' && localStorage.getItem('theme') !== 'dark'
-      ? 'light'
-      : 'dark'
+    typeof window !== 'undefined' && localStorage.getItem('theme') !== 'dark' ? 'light' : 'dark'
   )
 
   useEffect(() => {
@@ -34,11 +22,7 @@ export default function ThemeContextProvider({
     localStorage.setItem('theme', theme)
   }, [theme])
 
-  return (
-    <ThemeContext.Provider value={{ theme, setTheme }}>
-      {children}
-    </ThemeContext.Provider>
-  )
+  return <ThemeContext.Provider value={{ theme, setTheme }}>{children}</ThemeContext.Provider>
 }
 
 export function useTheme() {

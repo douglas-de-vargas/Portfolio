@@ -156,7 +156,7 @@ Obs: Desenvolvi todo o código pelo celular, talvez jogar em um dispositivo móv
     images: {
       image: '/images/projects/calculadora-imc/imc1.jpg',
       image1: '/images/projects/calculadora-imc/imc2.jpg',
-      image2: '/images/projects/calculadora-imc/imc3.jpg',
+      image2: '/images/projects/calculadora-imc/imc3.jpg'
     },
     github: 'https://github.com/S1NS3RO/Calculadora-imc',
     deploy: 'https://calculadora-imc-dusky.vercel.app',

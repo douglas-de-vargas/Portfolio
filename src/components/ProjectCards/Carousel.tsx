@@ -21,7 +21,7 @@ const Carousel: React.FC<CarouselProps> = ({ name, images }) => {
 
   const handleImage = (projectName: string, image?: string) => {
     if (image) {
-      setMainImages(prevImages => ({
+      setMainImages((prevImages) => ({
         ...prevImages!,
         [projectName]: image
       }))

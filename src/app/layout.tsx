@@ -16,11 +16,7 @@ export const metadata: Metadata = {
   description: 'Meu portfólio'
 }
 
-export default async function RootLayout({
-  children
-}: {
-  children: React.ReactNode
-}) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <ThemeContextProvider>
       <html lang='pt-BR'>
