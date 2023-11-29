@@ -31,8 +31,6 @@
   overflow: hidden;
 
   .principal {
-    height: 400px;
-    overflow: auto;
     width: 100%;
 
     img {
@@ -130,5 +128,10 @@
 
   .project {
     width: 310px !important;
+  }
+
+  .principal {
+    height: 400px;
+    overflow: auto;
   }
 }
