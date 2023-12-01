@@ -123,7 +123,7 @@ export default function ProjectCard() {
               <BsCalendar2Date fill='#6e7681' /> {formattedDate}
             </span>
 
-            <div id='card-actions'>
+            <div className='card-actions'>
               <div id='links'>
                 <Link
                   href={github}
