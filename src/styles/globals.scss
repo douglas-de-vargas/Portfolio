@@ -4,20 +4,7 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--tech-tags);
-  border-radius: 5px;
-  border: none;
+  font-family: sans-serif;
 }
 
 body {
@@ -35,8 +22,7 @@ main {
   margin: 0 auto;
   padding: 1rem 0.8rem 3rem;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px 0px;
-  width: 100%;
-  max-width: var(--maxwidth);
+  width: var(--maxWidth);
   background: var(--main);
 }
 
