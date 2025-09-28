@@ -59,7 +59,7 @@ export const projects = [
       image: '/images/projects/super-mario/super-mario-game-over.jpg',
       image1: '/images/projects/super-mario/super-mario.jpg'
     },
-    github: 'https://github.com/S1NS3RO/Super-Mario',
+    github: 'https://github.com/douglas-de-vargas/Super-Mario',
     deploy: 'https://super-mario-zeta.vercel.app/',
     link: '#',
     desc: `Este projeto foi inspirado em outro já existente. No entanto, escrevi o código completamente do zero, pois acredito que copiar códigos não contribui para a minha evolução.
@@ -85,7 +85,7 @@ Obs: Desenvolvi todo o código pelo celular, talvez jogar em um dispositivo móv
       image1: '/images/projects/delivery-app/delivery-gas1.jpg',
       image2: '/images/projects/delivery-app/delivery-gas2.jpg'
     },
-    github: 'https://github.com/S1NS3RO/gas2irmaos',
+    github: 'https://github.com/douglas-de-vargas/gas2irmaos',
     deploy: 'https://gas2irmaos.vercel.app/',
     link: '#',
     desc: `Este projeto destaca minha habilidade em desenvolver soluções práticas. Criado para simplificar pedidos de entrega, o aplicativo oferece uma experiência personalizada com base em qualquer empresa local. Este showcase demonstra minha capacidade de criar soluções eficientes e adaptáveis para diversas necessidades de delivery.`,
@@ -104,8 +104,8 @@ Obs: Desenvolvi todo o código pelo celular, talvez jogar em um dispositivo móv
       image2: '/images/projects/gerador-de-senhas/password3.jpg',
       image3: '/images/projects/gerador-de-senhas/password4.jpg'
     },
-    github: 'https://github.com/S1NS3RO/Password-generator',
-    deploy: 'https://s1ns3ro.github.io/Password-generator',
+    github: 'https://github.com/douglas-de-vargas/Password-generator',
+    deploy: 'https://douglas-de-vargas.github.io/Password-generator',
     link: '/password-generator',
     desc: 'Este foi o meu primeiro projeto usando JavaScript, serve para gerar senhas seguras com caracteres aleatórios, o número de caracteres pode ser definido pelo usuário',
     code: {
@@ -121,8 +121,8 @@ Obs: Desenvolvi todo o código pelo celular, talvez jogar em um dispositivo móv
       image: '/images/projects/todo-list/todo2.jpg',
       image1: '/images/projects/todo-list/todo1.jpg'
     },
-    github: 'https://github.com/S1NS3RO/Lista-de-tarefas',
-    deploy: 'https://s1ns3ro.github.io/Lista-de-tarefas',
+    github: 'https://github.com/douglas-de-vargas/Lista-de-tarefas',
+    deploy: 'https://douglas-de-vargas.github.io/Lista-de-tarefas',
     link: '/lista-de-tarefas',
     desc: 'Permite a criação, conclusão e exclusão de tarefas em lista',
     code: {
@@ -140,8 +140,8 @@ Obs: Desenvolvi todo o código pelo celular, talvez jogar em um dispositivo móv
       image2: '/images/projects/horas-do-dia/Screenshot_2.png',
       image3: '/images/projects/horas-do-dia/HorasDoDia_.jpg'
     },
-    github: 'https://github.com/S1NS3RO/Horas-do-dia',
-    deploy: 'https://s1ns3ro.github.io/Horas-do-dia',
+    github: 'https://github.com/douglas-de-vargas/Horas-do-dia',
+    deploy: 'https://douglas-de-vargas.github.io/Horas-do-dia',
     link: '/horas-do-dia',
     desc: `Este projeto me proporcionou um entendimento mais profundo dos conceitos fundamentais de manipulação do DOM com JavaScript e também sobre estilização usando CSS. Embora seja um projeto simples, ele me permitiu adquirir conhecimentos essenciais que abriram portas para o desenvolvimento de futuros projetos com base nas tecnologias que aprendi aqui. Esta aplicação tem como objetivo fornecer informações precisas sobre a data e hora, juntamente com uma saudação personalizada que varia de acordo com o período atual do dia para o usuário.`,
     code: {
@@ -158,7 +158,7 @@ Obs: Desenvolvi todo o código pelo celular, talvez jogar em um dispositivo móv
       image1: '/images/projects/calculadora-imc/imc2.jpg',
       image2: '/images/projects/calculadora-imc/imc3.jpg'
     },
-    github: 'https://github.com/S1NS3RO/Calculadora-imc',
+    github: 'https://github.com/douglas-de-vargas/Calculadora-imc',
     deploy: 'https://calculadora-imc-dusky.vercel.app',
     link: '/calculadora-imc',
     desc: 'Calcula o índice de massa corporal do usuário',
