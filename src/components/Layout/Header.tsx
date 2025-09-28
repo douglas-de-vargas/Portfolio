@@ -1,14 +1,10 @@
-"use client"
-// NextJs
+'use client'
 import Link from 'next/link'
-
-// React-icons
 import { ImHome3 } from 'react-icons/im'
 import { GoMoon, GoSun } from 'react-icons/go'
 import { BsLinkedin, BsGithub } from 'react-icons/bs'
-
-// Context
 import { useTheme } from '@/hooks/useTheme'
+import { gitHubLink, linkedInLink } from '@/data/links'
 
 /***/
 export default function Header() {
@@ -22,22 +18,23 @@ export default function Header() {
               id='classLinks'
               href='/'
               passHref>
-              <ImHome3 /> Douglas
+              <ImHome3 /> Douglas de Vargas
             </Link>
           </div>
 
           <div id='header-bar_links'>
             <div id='ico'>
               <Link
-                href='https://github.com/S1NS3RO?tab=repositories'
+                href={gitHubLink}
                 target='_blank'>
                 <BsGithub />
               </Link>
               <Link
-                href='https://br.linkedin.com/in/douglas-vargas-a517b2288'
+                href={linkedInLink}
                 target='_blank'>
                 <BsLinkedin />
               </Link>
+
               {theme === 'light' ? (
                 <div onClick={() => setTheme('dark')}>
                   <GoSun />
