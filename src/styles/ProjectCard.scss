@@ -28,11 +28,14 @@
   width: 350px;
   gap: 0.5rem;
   border: 1px solid red;
+  height: 300px;
 
   .principal {
+    overflow: hidden;
 
     img {
       width: 100%;
+      overflow: hidden;
     }
   }
 

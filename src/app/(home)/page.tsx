@@ -1,4 +1,5 @@
 import ProjectCard from '@/components/ProjectCards/ProjectCard'
+import { projects, iProjectProps } from '@/data/dataProjects'
 
 export default function Home() {
   return (
@@ -12,8 +13,13 @@ export default function Home() {
             front-end e desenvolver minhas habilidades como desenvolvedor.
           </p>
         </div>
-        <ProjectCard />
       </section>
+
+      <div>
+        <ul className='gap-5 grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3'>
+          <ProjectCard />
+        </ul>
+      </div>
     </>
   )
 }

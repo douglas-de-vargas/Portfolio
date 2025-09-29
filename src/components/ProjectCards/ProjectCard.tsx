@@ -54,8 +54,9 @@ export default function ProjectCard() {
       {projects.map(({ date, name, images, desc, github, deploy, code }: iProjectProps) => {
         const formattedDate: string = formatDate(date)
         return (
-          <article
-            className='project'
+          <li
+            className='bg-white border border-neutral-200 isolate relative rounded-2xl w-full'
+            // className='project'
             key={name}>
             <Carousel
               name={name}
@@ -119,9 +120,9 @@ export default function ProjectCard() {
 
               <p id='description'>{desc}</p>
 
-              <span id='date'>
-                <BsCalendar2Date fill='#6e7681' /> {formattedDate}
-              </span>
+              {/* <span id='date'>
+                  <BsCalendar2Date fill='#6e7681' /> {formattedDate}
+                </span> */}
 
               <div className='card-actions'>
                 <div id='links'>
@@ -140,7 +141,7 @@ export default function ProjectCard() {
                 </div>
               </div>
             </div>
-          </article>
+          </li>
         )
       })}
     </>
