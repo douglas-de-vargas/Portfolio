@@ -1,3 +1,5 @@
+import { linkedInLink } from '@/data/links'
+
 export default function Footer() {
   return (
     <>
@@ -6,13 +8,13 @@ export default function Footer() {
           <p>
             &copy; 2023{' '}
             <a
-              href='https://www.linkedin.com/in/douglas-vargas-a517b2288'
+              href={linkedInLink}
               target='_blank'
               rel='noreferrer'>
               {' '}
-              Douglas
+              Douglas de Vargas
             </a>
-            , front-end developer.
+            , full stack developer.
           </p>
         </div>
       </footer>

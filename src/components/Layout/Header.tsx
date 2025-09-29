@@ -6,7 +6,6 @@ import { BsLinkedin, BsGithub } from 'react-icons/bs'
 import { useTheme } from '@/hooks/useTheme'
 import { gitHubLink, linkedInLink } from '@/data/links'
 
-/***/
 export default function Header() {
   const { theme, setTheme } = useTheme()
   return (
