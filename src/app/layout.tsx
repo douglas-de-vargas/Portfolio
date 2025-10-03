@@ -1,4 +1,4 @@
-import '@/styles/globals.scss'
+import '@/styles/globals.css'
 import '@/styles/variables.scss'
 import '@/styles/darkTheme.scss'
 import '@/styles/HeaderFooter.scss'
@@ -11,7 +11,7 @@ import Header from '@/components/Layout/Header'
 import Footer from '@/components/Layout/Footer'
 
 export const metadata: Metadata = {
-  title: 'Douglas Vargas',
+  title: 'Douglas de Vargas',
   description: 'Meu portfólio'
 }
 

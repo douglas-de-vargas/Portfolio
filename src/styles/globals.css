@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+* {
+  color: var(--text);
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  background: var(--body);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 0 auto;
+  padding: 1rem 0.8rem 3rem;
+  max-width: var(--maxWidth);
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link);
+  font-weight: var(--fontweight);
+}
+
+input {
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+}

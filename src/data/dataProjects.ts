@@ -1,4 +1,3 @@
-//Tipagem
 export interface iProjectProps {
   date: string
   name: string
@@ -13,45 +12,10 @@ export interface iProjectProps {
   github: string
   deploy: string
   link?: string
-  code?: {
-    html5?: boolean
-    css3?: boolean
-    sass?: boolean
-    tailwindcss?: boolean
-    javascript?: boolean
-    reactjs?: boolean
-    nextjs?: boolean
-    typescript?: boolean
-  }
+  techs?: string[]
 }
 
-export const projects = [
-  /* Exemplo para novos projetos
-  {
-    date: 'DD/MM/AAAA',
-    name: '',
-    images: {
-      image: '/images/projects/',
-      image1: '',
-      image2: '',
-      image3: '',
-      image4: ''
-    },
-    github: '',
-    deploy: '',
-    link: '#',
-    desc: ``,
-    code: {
-      html5: true,
-      css3: true,
-      sass: true,
-      javascript: true,
-      reactjs: true,
-      nextjs: true,
-      tailwindcss: true,
-      typescript: true
-    }
-  }, */
+export const projects: iProjectProps[] = [
   {
     date: '26/11/2023',
     name: 'Super-Mario JavaScript',
@@ -71,11 +35,7 @@ Ao longo do processo, aprendi a implementar variáveis de controle, lógica e c�
 Adquiri uma valiosa experiência prática e conceitual.
 
 Obs: Desenvolvi todo o código pelo celular, talvez jogar em um dispositivo móvel proporcione uma imersão melhor.`,
-    code: {
-      html5: true,
-      css3: true,
-      javascript: true
-    }
+    techs: ['HTML5', 'CSS3', 'JavaScript']
   },
   {
     date: '26/11/2023',
@@ -89,11 +49,7 @@ Obs: Desenvolvi todo o código pelo celular, talvez jogar em um dispositivo móv
     deploy: 'https://gas2irmaos.vercel.app/',
     link: '#',
     desc: `Este projeto destaca minha habilidade em desenvolver soluções práticas. Criado para simplificar pedidos de entrega, o aplicativo oferece uma experiência personalizada com base em qualquer empresa local. Este showcase demonstra minha capacidade de criar soluções eficientes e adaptáveis para diversas necessidades de delivery.`,
-    code: {
-      sass: true,
-      nextjs: true,
-      typescript: true
-    }
+    techs: ['Sass', 'NextJs', 'TypeScript']
   },
   {
     date: '01/09/2023',
@@ -108,11 +64,11 @@ Obs: Desenvolvi todo o código pelo celular, talvez jogar em um dispositivo móv
     deploy: 'https://douglas-de-vargas.github.io/Password-generator',
     link: '/password-generator',
     desc: 'Este foi o meu primeiro projeto usando JavaScript, serve para gerar senhas seguras com caracteres aleatórios, o número de caracteres pode ser definido pelo usuário',
-    code: {
-      html5: true,
-      css3: true,
-      javascript: true
-    }
+    techs: [
+      'html5',
+      'css3',
+      'javascript'
+    ]
   },
   {
     date: '08/09/2023',
@@ -125,11 +81,10 @@ Obs: Desenvolvi todo o código pelo celular, talvez jogar em um dispositivo móv
     deploy: 'https://douglas-de-vargas.github.io/Lista-de-tarefas',
     link: '/lista-de-tarefas',
     desc: 'Permite a criação, conclusão e exclusão de tarefas em lista',
-    code: {
-      html5: true,
-      css3: true,
-      javascript: true
-    }
+    techs: 
+      ['html5',
+      'css3',
+      'javascript']
   },
   {
     date: '02/10/2023',
@@ -144,11 +99,11 @@ Obs: Desenvolvi todo o código pelo celular, talvez jogar em um dispositivo móv
     deploy: 'https://douglas-de-vargas.github.io/Horas-do-dia',
     link: '/horas-do-dia',
     desc: `Este projeto me proporcionou um entendimento mais profundo dos conceitos fundamentais de manipulação do DOM com JavaScript e também sobre estilização usando CSS. Embora seja um projeto simples, ele me permitiu adquirir conhecimentos essenciais que abriram portas para o desenvolvimento de futuros projetos com base nas tecnologias que aprendi aqui. Esta aplicação tem como objetivo fornecer informações precisas sobre a data e hora, juntamente com uma saudação personalizada que varia de acordo com o período atual do dia para o usuário.`,
-    code: {
-      html5: true,
-      css3: true,
-      javascript: true
-    }
+    techs: [
+      'html5',
+      'css3',
+      'javascript'
+    ]
   },
   {
     date: '14/09/2023',
@@ -162,10 +117,10 @@ Obs: Desenvolvi todo o código pelo celular, talvez jogar em um dispositivo móv
     deploy: 'https://calculadora-imc-dusky.vercel.app',
     link: '/calculadora-imc',
     desc: 'Calcula o índice de massa corporal do usuário',
-    code: {
-      css3: true,
-      javascript: true,
-      reactjs: true
-    }
+    techs: [
+      'css3',
+      'javascript',
+      'reactjs'
+    ]
   }
 ]

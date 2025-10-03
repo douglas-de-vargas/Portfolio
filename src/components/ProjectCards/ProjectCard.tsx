@@ -1,138 +1,56 @@
-import '@/styles/ProjectCard.scss'
-
-//NextJs
 import Link from 'next/link'
-
-//Data
 import { projects, iProjectProps } from '@/data/dataProjects'
-
-//Components
-import Carousel from './Carousel'
-
-//Icons
-import { BsGithub, BsCalendar2Date } from 'react-icons/bs'
-import { IoLogoJavascript, IoLogoCss3, IoLogoSass, IoLogoHtml5, IoLogoReact } from 'react-icons/io5'
-import { SiTailwindcss, SiTypescript } from 'react-icons/si'
-import { TbBrandNextjs } from 'react-icons/tb'
+import { BsGithub } from 'react-icons/bs'
 import { GoProjectSymlink } from 'react-icons/go'
 
-// Projetos mais recentes primeiro
-projects.sort((a, b) => {
-  const dataA = new Date(a.date.split('/').reverse().join('/'))
-  const dataB = new Date(b.date.split('/').reverse().join('/'))
-  return dataB.getTime() - dataA.getTime()
+projects.sort((projectA, projectB) => {
+  const dateProjectA = new Date(projectA.date.split('/').reverse().join('/')).getTime()
+  const dateProjectB = new Date(projectB.date.split('/').reverse().join('/')).getTime()
+  return dateProjectB - dateProjectA
 })
 
-// Formata a data em ex: Set. 2023
-function formatDate(date: string): string {
-  const [, month, year] = date.split('/')
-
-  const monthNames = [
-    'Jan',
-    'Fev',
-    'Mar',
-    'Abr',
-    'Mai',
-    'Jun',
-    'Jul',
-    'Ago',
-    'Set',
-    'Out',
-    'Nov',
-    'Dez'
-  ]
-
-  const monthNamed = monthNames[parseInt(month, 10) - 1]
-
-  return `${monthNamed}. ${year}`
-}
-
-// *** //
 export default function ProjectCard() {
   return (
     <>
-      {projects.map(({ date, name, images, desc, github, deploy, code }: iProjectProps) => {
-        const formattedDate: string = formatDate(date)
+      {projects.map(({ name, images, desc, github, deploy, techs }: iProjectProps) => {
         return (
           <li
-            className='bg-white border border-neutral-200 isolate relative rounded-2xl w-full'
-            // className='project'
+            className='overflow-hidden bg-white border border-neutral-200 relative rounded-2xl w-full flex flex-col'
             key={name}>
-            <Carousel
-              name={name}
-              images={images}
-            />
-            <div className='infos'>
+            <div className='w-full h-[300px] overflow-hidden'>
+              <img
+                className='w-full backface-hidden duration-300 hover:scale-105 object-cover object-top transition-transform'
+                src={images.image}
+                alt={name}
+              />
+            </div>
+
+            <div className='p-2.5 flex grow flex-col gap-2'>
               <h2>{name}</h2>
+              <div className='flex flex-wrap gap-1.5 uppercase'>
+                {techs &&
+                  techs.map((tech) => (
+                    <span
+                      key={tech}
+                      className='font-bold border border-gray-400 rounded-b-sm py-0.5 px-2 cursor-default'>
+                      {tech}
+                    </span>
+                  ))}
+              </div>
 
-              {code && (
-                <div className='techs_name'>
-                  {code.nextjs && (
-                    <span>
-                      <TbBrandNextjs fill='transparent' />
-                      Next.js
-                    </span>
-                  )}
-                  {code.reactjs && (
-                    <span>
-                      <IoLogoReact fill='#18b3df' />
-                      React JS
-                    </span>
-                  )}
-                  {code.javascript && (
-                    <span>
-                      <IoLogoJavascript fill='#f0d81e' />
-                      JavaScript
-                    </span>
-                  )}
-                  {code.typescript && (
-                    <span>
-                      <SiTypescript fill='#2f74c1' />
-                      TypeScript
-                    </span>
-                  )}
-                  {code.html5 && (
-                    <span>
-                      <IoLogoHtml5 fill='#e95e25' />
-                      HTML5
-                    </span>
-                  )}
-                  {code.css3 && (
-                    <span>
-                      <IoLogoCss3 fill='#3f95d0' />
-                      CSS3
-                    </span>
-                  )}
-                  {code.sass && (
-                    <span>
-                      <IoLogoSass fill='#cf649a' />
-                      Sass
-                    </span>
-                  )}
-                  {code.tailwindcss && (
-                    <span>
-                      <SiTailwindcss fill='#36b7f0' />
-                      Tailwind CSS
-                    </span>
-                  )}
-                </div>
-              )}
+              <p className='flex grow px-1 max-h-[200px] overflow-auto'>{desc}</p>
 
-              <p id='description'>{desc}</p>
-
-              {/* <span id='date'>
-                  <BsCalendar2Date fill='#6e7681' /> {formattedDate}
-                </span> */}
-
-              <div className='card-actions'>
-                <div id='links'>
+              <div className='flex justify-between items-stretch flex-wrap gap-1.5 select-none'>
+                <div className='flex flex-wrap justify-center gap-1.5'>
                   <Link
+                    className='flex gap-1 items-center rounded-[4px] text-[1.1rem] bg-[var(--primary)] px-4 py-1'
                     href={github}
                     target='_blank'
                     passHref>
                     <BsGithub /> GitHub
                   </Link>
                   <Link
+                    className='flex gap-1 items-center rounded-[4px] text-[1.1rem] bg-[var(--primary)] px-4 py-1'
                     href={deploy}
                     target='_blank'
                     passHref>
