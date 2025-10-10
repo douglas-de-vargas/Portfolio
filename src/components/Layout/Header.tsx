@@ -4,7 +4,7 @@ import { ImHome3 } from 'react-icons/im'
 import { GoMoon, GoSun } from 'react-icons/go'
 import { BsLinkedin, BsGithub } from 'react-icons/bs'
 import { useTheme } from '@/hooks/useTheme'
-import { gitHubLink, linkedInLink } from '@/data/links'
+import { gitHubLink, linkedInLink } from '@/data/projects'
 
 export default function Header() {
   const { theme, setTheme } = useTheme()

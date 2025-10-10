@@ -1,4 +1,4 @@
-import { linkedInLink } from '@/data/links'
+import { linkedInLink } from '@/data/projects'
 
 export default function Footer() {
   return (
